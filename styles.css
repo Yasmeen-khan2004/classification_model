@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #154eb8; /* light gray background */
+}
+
+header {
+    background-color: #333;
+    color: #146cb4;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.514); /* add a subtle shadow */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+    transition: background-color 0.2s ease; /* add a hover effect */
+}
+
+nav li:hover {
+    background-color: #444; /* dark gray background on hover */
+}
+
+nav a {
+    color: #1b0101;
+    text-decoration: none;
+    transition: color 0.2s ease; /* add a hover effect */
+}
+
+nav a:hover {
+    color: #34b115; /* light gray text on hover */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em; /* add some padding to the main section */
+}
+
+section {
+    background-color: #fff; /* white background for each section */
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7; /* blue text color */
+}
+
+a:hover {
+    color: #23527c; /* darker blue text color on hover */
+}
+
+/* add some styles for the profile photo */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* add some styles for the contact icons */
+.contact-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #337ab7; /* blue icon color */
+}
+
+.contact-icon:hover {
+    color: #23527c; /* darker blue icon color on hover */
+}

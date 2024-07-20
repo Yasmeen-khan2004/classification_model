@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS (assuming you have Bootstrap files locally or hosted) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Classification_Model</title>
+
+    <style>
+        /* Custom background color */
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            padding: 20px; /* Add some padding for better readability */
+        }
+    </style>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- You can keep your custom styles separate if needed -->
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Airline Customer Satisfaction Prediction Model 😍</h2>
+        <p class="text-center">This is my airline satisfaction prediction project.</p>
+        <form action="{{ url_for('prediction') }}" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="text" name="Age" class="form-control" id="Age" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <label for="Inflight_entertainment">Inflight Entertainment:</label>
+                <select name="Inflight_entertainment" id="Inflight_entertainment" class="form-control" required>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Cleanliness">Cleanliness:</label>
+                <select name="Cleanliness" id="Cleanliness" class="form-control" required>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Departure_Delay_in_Minutes">Departure Delay in Minutes:</label>
+                <input type="text" name="Departure_Delay_in_Minutes" class="form-control" id="Departure_Delay_in_Minutes" placeholder="Enter Departure Delay">
+            </div>
+            <div class="form-group">
+                <label for="Arrival_Delay_in_Minutes">Arrival Delay in Minutes:</label>
+                <input type="text" name="Arrival_Delay_in_Minutes" class="form-control" id="Arrival_Delay_in_Minutes" placeholder="Enter Arrival Delay">
+            </div>
+            <div class="form-group">
+                <label for="Customer_Type">Customer Type:</label>
+                <select name="Customer_Type" id="Customer_Type" class="form-control" required>
+                    <option value="0">Loyal Customer</option>
+                    <option value="1">Disloyal Customer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Class">Class:</label>
+                <select name="Class" id="Class" class="form-control" required>
+                    <option value="0">Class_Eco</option>
+                    <option value="1">Class_Eco Plus</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Type_of_travel">Type of Travel:</label>
+                <select name="Type_of_travel" id="Type_of_travel" class="form-control" required>
+                    <option value="1">Personal Travel</option>
+                    <option value="0">Business Travel</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Flight_Distance">Flight Distance:</label>
+                <input type="text" name="Flight_Distance" class="form-control" id="Flight_Distance" placeholder="Enter Flight Distance">
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender:</label>
+                <select name="Gender" id="Gender" class="form-control" required>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Baggage_handling">Baggage Handling:</label>
+                <select name="Baggage_handling" id="Baggage_handling" class="form-control" required>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (only if needed, depends on your requirements) -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+</html>
